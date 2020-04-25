@@ -14,11 +14,11 @@ def merged_intervals(intervals):
         interval_min = min(interval)
         interval_max = max(interval)
 
-        for workingInterval in intervals:
-            workingInterval_min = min(workingInterval)
-            workingInterval_max = max(workingInterval)
+        for working_interval in intervals:
+            working_interval_min = min(working_interval)
+            working_interval_max = max(working_interval)
 
-            if workingInterval_min < interval_min and workingInterval_max > interval_max:
+            if working_interval_min < interval_min and working_interval_max > interval_max:
                 intervals.remove(interval)
                 break
     
